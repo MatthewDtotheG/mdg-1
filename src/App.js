@@ -1,42 +1,31 @@
-import React, { Component, Fragment } from "react";
+import React, { useState } from "react";
 import "./App.scss";
 
-class App extends Component {
-  state = {
-    clicked: false
-  };
-
-  handleClick = () => {
-    this.setState({
-      clicked: !this.state.clicked
-    });
-  };
-
-  render() {
+ const App = () => {
+  const [secondPage, showPage] = useState('hide');
     return (
       <div className="App">
         <header>
           <title>MG</title>
         </header>
-        {this.state.clicked === false ? (
+        {secondPage === 'hide' ? (
           <div>
             <h1>Matthew Garrett</h1>
-            <h4>Full Stack Engineer</h4>
             <ul>
               <a href="https://github.com/MatthewDtotheG" target="_blank">
-                github
+                <img src="./github.svg"/>
               </a>
               <a href="https://twitter.com/matthewdtotheg" target="_blank">
-                twitter
+                <img src="./twitter.svg"/>
               </a>
               <a
                 href="https://www.linkedin.com/in/matthewdtotheg/"
                 target="_blank"
               >
-                linkedin
+              <img src="./linkedin.svg"/>
               </a>
             </ul>
-            <div className="question" onClick={() => this.handleClick()}>
+            <div className="question" onClick={() => showPage('show')}>
               <a>?</a>
             </div>
           </div>
@@ -48,7 +37,7 @@ class App extends Component {
               Hosted on Netlify
             </p>
             <p />
-            <div className="close" onClick={() => this.handleClick()}>
+            <div className="close" onClick={() => showPage('hide')}>
               <a>X</a>
             </div>
           </div>
@@ -56,6 +45,5 @@ class App extends Component {
       </div>
     );
   }
-}
 
 export default App;
