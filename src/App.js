@@ -20,7 +20,7 @@ const App = () => {
         />
         <FliesText
           id="title"
-          cellRadius={1}
+          cellRadius={3}
           text="Web Developer / Brooklynite"
           fontSize={50}
           cellWidth={0.03}
@@ -31,9 +31,9 @@ const App = () => {
           <a href="https://github.com/MatthewDtotheG" target="_blank">
             <FliesText
               id="github"
-              cellRadius={2}
+              cellRadius={3}
               text="Github"
-              fontSize={30}
+              fontSize={50}
               cellWidth={0.03}
               speed={2}
               dodge={false}
@@ -42,9 +42,9 @@ const App = () => {
           <a href="https://www.linkedin.com/in/matthewdtotheg/" target="_blank">
             <FliesText
               id="linkedin"
-              cellRadius={2}
+              cellRadius={3}
               text="Linkedin"
-              fontSize={30}
+              fontSize={50}
               cellWidth={0.03}
               speed={2}
               dodge={false}
@@ -53,9 +53,9 @@ const App = () => {
           <a href="https://twitter.com/matthewdtotheg" target="_blank">
             <FliesText
               id="twitter"
-              cellRadius={2}
+              cellRadius={3}
               text="Twitter"
-              fontSize={30}
+              fontSize={50}
               cellWidth={0.03}
               speed={2}
               dodge={false}
