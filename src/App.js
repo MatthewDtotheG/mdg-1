@@ -46,7 +46,7 @@ const App = () => {
       <FliesText
         id="title"
         cellRadius={3}
-        text="Web Developer / Brooklynite"
+        text="Web Developer"
         fontSize={size.width < 913 ? 30 : 50}
         cellWidth={0.03}
         speed={2}

@@ -27,10 +27,16 @@
 
 @media screen and (max-width: 992px) {
   #name {
-    margin-top: 50%;
+    margin-top: 40%;
   }
-  #title,
-  .link-wrapper {
+  #title {
     margin-top: 20px;
+  }
+  .link-wrapper {
+    #github,
+    #linkedin,
+    #twitter {
+      margin: 10px;
+    }
   }
 }
