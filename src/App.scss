@@ -1,34 +1,36 @@
-body,
-html {
+.container-wrapper {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 #name {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-#title {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-ul {
-  position: absolute;
   text-align: center;
   width: 100%;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 20%;
+}
+#title {
+  width: 100%;
+  text-align: center;
+}
+
+.link-wrapper {
+  text-align: center;
+  width: 100%;
   #github,
   #linkedin,
   #twitter {
     display: inline-block;
     margin-right: 20px;
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #name {
+    margin-top: 50%;
+  }
+  #title,
+  .link-wrapper {
+    margin-top: 20px;
   }
 }
